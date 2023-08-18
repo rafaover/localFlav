@@ -1,3 +1,34 @@
 <resources>
-    <string name="app_name">Eatas</string>
+    <string name="app_name" translatable="false">Eatas</string>
+    // Brazilian Dishes
+    <string name="feijoada" translatable="false">Feijoada</string>
+    <string name="moqueca" translatable="false">Moqueca</string>
+    <string name="acaraje" translatable="false">Acarajé</string>
+    <string name="paodequeijo" translatable="false">Pão de Queijo</string>
+    <string name="bobodecamarao" translatable="false">Bobó de Camarão</string>
+    <string name="barreado" translatable="false">Barreado</string>
+    <string name="bolinhodebacalhau" translatable="false">Bolinho de Bacalhau</string>
+    <string name="vatapa" translatable="false">Vatapá</string>
+    <string name="xinxim" translatable="false">Xinxim de Galinha</string>
+    <string name="coxinha" translatable="false">Coxinha</string>
+    <string name="carnedesol" translatable="false">Carne de Sol</string>
+    <string name="canjica" translatable="false">Canjica</string>
+    <string name="tacaca" translatable="false">Tacacá</string>
+    <string name="acai" translatable="false">Açai na Tigela</string>
+    <string name="tutumineira" translatable="false">Tutu à Mineira</string>
+    <string name="Quindim" translatable="false">Quindim</string>
+    <string name="camaraomoranga" translatable="false">Camarão na Moranga</string>
+    <string name="pirarucu" translatable="false">Pirarucu de Casaca</string>
+    <string name="Pastel" translatable="false">Pastel</string>
+    <string name="feijaotropeiro" translatable="false">Feijão Tropeiro</string>
+    <string name="Churrasco" translatable="false">Churrasco</string>
+    <string name="mariaizabel" translatable="false">Maria Izabel</string>
+    <string name="mocoto" translatable="false">Mocotó</string>
+    <string name="Curau" translatable="false">Curau</string>
+    <string name="pamonha" translatable="false">Pamonha</string>
+    <string name="peixefrito" translatable="false">Peixe Frito</string>
+    <string name="sarapatel" translatable="false">Sarapatel</string>
+    <string name="maxixe" translatable="false">Maxixe Refogado</string>
+    <string name="buchada" translatable="false">Buchada de Bode</string>
+    <string name="cuzcuz" translatable="false">Cuzcuz Nordestino</string>
 </resources>
