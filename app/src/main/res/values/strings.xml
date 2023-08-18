@@ -33,7 +33,7 @@
     <string name="cuzcuz" translatable="false">Cuzcuz Nordestino</string>
     // Brazilian dishes descriptions
     <string name="feijoada_description">Hearty and smoky, black bean stew with tender meats, creating a symphony of flavors. National dish of Brazil, from Rio de Janeiro.</string>
-    <string name="moqueca_description">Creamy coconut broth cradling seafood, marrying sweet and tangy notes. Bahia and Espírito Santo\'s coastal masterpiece.</string>
+    <string name="moqueca_description">Creamy coconut broth cradling seafood, marrying sweet and tangy notes. Brazilian coastal masterpiece.</string>
     <string name="acaraje_description">Crispy, golden fritters filled with spiced shrimp, echoing the sea\'s essence. A cherished street food from Bahia.</string>
     <string name="paodequeijo_description">Cheesy, airy delights offering a taste of comfort and love. Beloved cheese bread from Minas Gerais.</string>
     <string name="bobó_de_camarao_description">Velvety yucca purée embraces succulent shrimp, a tropical rendezvous. A treasure from Bahia\'s culinary treasures.</string>
@@ -45,7 +45,7 @@
     <string name="carne_de_sol_description">Sun-dried, seasoned beef, grilled to perfection, a rustic delight. Northern Brazilian treasure.</string>
     <string name="canjica_description">Creamy corn porridge, kissed by coconut and warmth, a winter embrace. Beloved in Minas Gerais and Northeast.</string>
     <string name="tacaca_description">A symphony of flavors in a bowl: sour, spicy, umami. Açaí palm delight from Amazonas.</string>
-    <string name="acai_na_tigela_description">Purple power in a bowl, brimming with energy and vitality. Amazonian Amazonas delicacy.</string>
+    <string name="acai_na_tigela_description">Purple power in a bowl, brimming with energy and vitality. Amazonian Amazonas delicacy. Famous in Belem.</string>
     <string name="tutu_a_mineira_description">Rich bean purée hugged by smoky sausage and manioc flour. Heartwarming Minas Gerais tradition.</string>
     <string name="quindim_description">Sunshine-infused custard, golden and delicate as a Brazilian morning. Sweet gem from Bahia.</string>
     <string name="camarao_na_moranga_description">Baked pumpkin cradles shrimp in a duet of earth and sea. A treasure from Rio de Janeiro.</string>
