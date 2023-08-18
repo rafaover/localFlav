@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name" translatable="false">Eatas</string>
-    // Brazilian Dishes
+    // Brazilian Dishes Titles
     <string name="feijoada" translatable="false">Feijoada</string>
     <string name="moqueca" translatable="false">Moqueca</string>
     <string name="acaraje" translatable="false">Acarajé</string>
@@ -31,4 +31,35 @@
     <string name="maxixe" translatable="false">Maxixe Refogado</string>
     <string name="buchada" translatable="false">Buchada de Bode</string>
     <string name="cuzcuz" translatable="false">Cuzcuz Nordestino</string>
+    // Brazilian dishes descriptions
+    <string name="feijoada_description">Hearty and smoky, black bean stew with tender meats, creating a symphony of flavors. National dish of Brazil, from Rio de Janeiro.</string>
+    <string name="moqueca_description">Creamy coconut broth cradling seafood, marrying sweet and tangy notes. Bahia and Espírito Santo\'s coastal masterpiece.</string>
+    <string name="acaraje_description">Crispy, golden fritters filled with spiced shrimp, echoing the sea\'s essence. A cherished street food from Bahia.</string>
+    <string name="paodequeijo_description">Cheesy, airy delights offering a taste of comfort and love. Beloved cheese bread from Minas Gerais.</string>
+    <string name="bobó_de_camarao_description">Velvety yucca purée embraces succulent shrimp, a tropical rendezvous. A treasure from Bahia\'s culinary treasures.</string>
+    <string name="barreado_description">Slow-cooked beef melds with spices, tenderly painted by time. A secret from Paraná\'s kitchens.</string>
+    <string name="bolinho_de_bacalhau_description">Salt cod fritters with a crispy exterior and delicate fish inside. Portuguese-inspired treat adored nationwide.</string>
+    <string name="vatapa_description">Nutty, velvety shrimp stew dances with a chorus of spices. Bahia\'s gift to the senses.</string>
+    <string name="xinxim_de_galinha_description">Peanut-chicken stew sings with textures and flavors, a culinary carnival. Delight from Bahia.</string>
+    <string name="coxinha_description">Golden croquettes, embracing shredded chicken, a childhood favorite reborn. Cherished nationwide.</string>
+    <string name="carne_de_sol_description">Sun-dried, seasoned beef, grilled to perfection, a rustic delight. Northern Brazilian treasure.</string>
+    <string name="canjica_description">Creamy corn porridge, kissed by coconut and warmth, a winter embrace. Beloved in Minas Gerais and Northeast.</string>
+    <string name="tacaca_description">A symphony of flavors in a bowl: sour, spicy, umami. Açaí palm delight from Amazonas.</string>
+    <string name="acai_na_tigela_description">Purple power in a bowl, brimming with energy and vitality. Amazonian Amazonas delicacy.</string>
+    <string name="tutu_a_mineira_description">Rich bean purée hugged by smoky sausage and manioc flour. Heartwarming Minas Gerais tradition.</string>
+    <string name="quindim_description">Sunshine-infused custard, golden and delicate as a Brazilian morning. Sweet gem from Bahia.</string>
+    <string name="camarao_na_moranga_description">Baked pumpkin cradles shrimp in a duet of earth and sea. A treasure from Rio de Janeiro.</string>
+    <string name="pirarucu_de_casaca_description">Smoked fish and cassava mingle, celebrating the Amazon\'s bounty. Amazonas masterpiece.</string>
+    <string name="pastel_description">Crispy pastries conceal various fillings, bringing joy in every bite. Street food adored nationwide.</string>
+    <string name="feijao_tropeiro_description">Beans, bacon, and farofa unite in a rustic, savory symphony. From Minas Gerais, a taste of history.</string>
+    <string name="churrasco_description">Skewers of succulent meats, kissed by flames, a carnivore\'s dream. A tradition mastered throughout Brazil.</string>
+    <string name="maria_izabel_description">Pumpkin and coconut sweet embrace in a harmonious dance. A Maranhão dessert celebration.</string>
+    <string name="mocoto_description">Tripe and bean stew, hearty and rich, a comfort from São Paulo.</string>
+    <string name="curau_description">Creamy corn pudding, whispers of cinnamon and nostalgia. Beloved dessert nationwide.</string>
+    <string name="pamonha_description">Wrapped corn parcels, sweet or savory, a festival of flavors. A treasure from Goiás.</string>
+    <string name="peixefrito_description">Grilled or fried fish adorned with lime and herbs, coastal perfection. Fresh catch from Northeast.</string>
+    <string name="sarapatel_description">Tender offal stew, vibrant with spices and love, a feast for the adventurous. From Pernambuco.</string>
+    <string name="maxixe_refogado_description">Sautéed gherkin, a tangy and crisp side dance. Found in various Brazilian kitchens.</string>
+    <string name="buchada_de_bode_description">Innards enveloped in goat stomach, a hearty Nordeste tradition. Hailing from Ceará.</string>
+    <string name="cuscuz_description">Cornmeal molded into a medley cheese, coconut milk and a fried egg. Ceara\'s comfort.</string>
 </resources>
