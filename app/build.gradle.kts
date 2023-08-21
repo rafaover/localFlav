@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.feeltheboard.eatas"
+    namespace = "com.feeltheboard.localflav"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.feeltheboard.eatas"
+        applicationId = "com.feeltheboard.localflav"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

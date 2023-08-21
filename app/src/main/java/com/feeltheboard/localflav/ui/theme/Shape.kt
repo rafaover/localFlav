@@ -1,4 +1,4 @@
-package com.feeltheboard.eatas.ui.theme
+package com.feeltheboard.localflav.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Shapes

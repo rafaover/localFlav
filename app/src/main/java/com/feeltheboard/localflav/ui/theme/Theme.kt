@@ -1,4 +1,4 @@
-package com.feeltheboard.eatas.ui.theme
+package com.feeltheboard.localflav.ui.theme
 
 import android.app.Activity
 import android.os.Build
