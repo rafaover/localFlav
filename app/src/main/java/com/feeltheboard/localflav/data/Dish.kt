@@ -1,4 +1,4 @@
-package com.feeltheboard.localflav.model
+package com.feeltheboard.localflav.data
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
