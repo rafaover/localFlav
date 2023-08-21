@@ -1,6 +1,6 @@
 package com.feeltheboard.localflav.data
 
-import com.feeltheboard.eatas.R
+import com.feeltheboard.localflav.R
 
 object DataSource {
     val dishes = listOf(

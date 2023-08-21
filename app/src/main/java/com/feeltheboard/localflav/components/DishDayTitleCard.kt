@@ -11,8 +11,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.feeltheboard.eatas.R
-import com.feeltheboard.localflav.ui.theme.EatasTheme
+import com.feeltheboard.localflav.R
+import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
 
 @Composable
 fun DishDayTitleCard(
@@ -37,7 +37,7 @@ fun DishDayTitleCard(
 @Preview
 @Composable
 fun DayTitlePreview() {
-    EatasTheme {
+    LocalFlavTheme {
         DishDayTitleCard(
             day = R.string.day_1,
             title = R.string.title_1
