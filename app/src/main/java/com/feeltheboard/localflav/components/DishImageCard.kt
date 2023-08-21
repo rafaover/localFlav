@@ -18,7 +18,7 @@ import com.feeltheboard.eatas.R
 @Composable
 fun DishImageCard(
     @DrawableRes image: Int,
-    @StringRes description: Int,
+    @StringRes caption: Int,
     modifier: Modifier = Modifier
 ) {
     Box(
@@ -29,7 +29,7 @@ fun DishImageCard(
     ) {
         Image(
             painter = painterResource(id = image), 
-            contentDescription = stringResource(id = description),
+            contentDescription = stringResource(id = caption),
         )
     }
 }
