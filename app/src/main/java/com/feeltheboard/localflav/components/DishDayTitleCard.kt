@@ -1,4 +1,4 @@
-package com.feeltheboard.eatas.components
+package com.feeltheboard.localflav.components
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Column
@@ -12,7 +12,7 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.feeltheboard.eatas.R
-import com.feeltheboard.eatas.ui.theme.EatasTheme
+import com.feeltheboard.localflav.ui.theme.EatasTheme
 
 @Composable
 fun DishDayTitleCard(

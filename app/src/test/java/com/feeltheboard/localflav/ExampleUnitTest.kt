@@ -1,4 +1,4 @@
-package com.feeltheboard.eatas
+package com.feeltheboard.localflav
 
 import org.junit.Test
 
