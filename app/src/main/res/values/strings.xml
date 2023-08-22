@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">localFlav</string>
+    <string name="app_name" translatable="false">LocalFlav</string>
     // List of 30 days
     <string name="day_1">Day 1</string>
     <string name="day_2">Day 2</string>
