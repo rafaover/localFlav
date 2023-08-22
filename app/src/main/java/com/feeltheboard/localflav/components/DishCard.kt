@@ -11,8 +11,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.Dp
-import androidx.compose.ui.unit.dp
 import com.feeltheboard.localflav.R
 import com.feeltheboard.localflav.data.Dish
 import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
@@ -28,7 +26,7 @@ fun DishCard(
         shape = CardDefaults.shape,
         border = BorderStroke(
             dimensionResource(R.dimen.card_border),
-            MaterialTheme.colorScheme.secondary
+            MaterialTheme.colorScheme.primaryContainer
         )
     ) {
         Row {
