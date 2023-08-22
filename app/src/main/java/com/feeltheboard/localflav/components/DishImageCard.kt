@@ -10,9 +10,11 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import com.feeltheboard.localflav.R
 
 @Composable
@@ -23,13 +25,24 @@ fun DishImageCard(
 ) {
     Box(
         modifier = Modifier
-            .padding(dimensionResource(id = R.dimen.padding_small))
-            .size(dimensionResource(id = R.dimen.image_size))
-            .clip(MaterialTheme.shapes.small)
+            .padding(dimensionResource(R.dimen.padding_small))
     ) {
         Image(
             painter = painterResource(id = image), 
             contentDescription = stringResource(id = caption),
+            modifier = Modifier
+                .size(dimensionResource(R.dimen.image_size))
+                .clip(MaterialTheme.shapes.small),
+            contentScale = ContentScale.Crop
         )
     }
+}
+
+@Preview
+@Composable
+fun DishImageCardPreview() {
+    DishImageCard(
+        image = R.drawable.image_15,
+        caption = R.string.title_15
+    )
 }
