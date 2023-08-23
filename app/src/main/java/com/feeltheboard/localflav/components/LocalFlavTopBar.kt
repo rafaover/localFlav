@@ -46,7 +46,6 @@ fun LocalFlavTopAppBar(modifier: Modifier = Modifier) {
                 content = { Icon(painter = painterResource(R.drawable.menu_access), contentDescription = "List of Dishes") },
                 onClick = { /*TODO*/ },
                 enabled = false,
-                colors = IconButtonDefaults.filledIconButtonColors()
             )
         }
     )
