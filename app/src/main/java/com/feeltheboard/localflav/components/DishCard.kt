@@ -1,9 +1,7 @@
 package com.feeltheboard.localflav.components
 
-import androidx.compose.animation.animateContentSize
-import androidx.compose.animation.core.Spring
-import androidx.compose.animation.core.spring
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -23,39 +21,40 @@ fun DishCard(
     dish: Dish,
     modifier: Modifier = Modifier
 ) {
-    Card(
-        modifier = Modifier
-            .animateContentSize(
-                animationSpec = spring(
-                    dampingRatio = Spring.DampingRatioLowBouncy,
-                    stiffness = Spring.StiffnessMedium
-                )
+    Box(modifier = modifier) {
+        Card(
+            modifier = Modifier
+//                .animateContentSize(
+//                    animationSpec = spring(
+//                        dampingRatio = Spring.DampingRatioLowBouncy,
+//                        stiffness = Spring.StiffnessMedium
+//                    )
+//                )
+                .fillMaxWidth(),
+            shape = CardDefaults.shape,
+            border = BorderStroke(
+                dimensionResource(R.dimen.card_border),
+                MaterialTheme.colorScheme.primary
             )
-            .fillMaxWidth(),
-        elevation = CardDefaults.cardElevation(dimensionResource(R.dimen.card_elevation)),
-        shape = CardDefaults.shape,
-        border = BorderStroke(
-            dimensionResource(R.dimen.card_border),
-            MaterialTheme.colorScheme.primary
-        )
-    ) {
-        Row {
-            DishDayTitleCard(
-                day = dish.dayRes,
-                title = dish.titleRes
-            )
-        }
-        Row {
-            Column {
-                DishImageCard(
-                    image = dish.imageRes,
-                    caption = dish.titleRes
+        ) {
+            Row {
+                DishDayTitleCard(
+                    day = dish.dayRes,
+                    title = dish.titleRes
                 )
             }
-            Column {
-                DishDescriptionCard(
-                    description = dish.descriptionRes
-                )
+            Row {
+                Column {
+                    DishImageCard(
+                        image = dish.imageRes,
+                        caption = dish.titleRes
+                    )
+                }
+                Column {
+                    DishDescriptionCard(
+                        description = dish.descriptionRes
+                    )
+                }
             }
         }
     }

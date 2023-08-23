@@ -24,7 +24,7 @@ fun DishImageCard(
     modifier: Modifier = Modifier
 ) {
     Box(
-        modifier = Modifier
+        modifier = modifier
             .padding(dimensionResource(R.dimen.padding_small))
     ) {
         Image(

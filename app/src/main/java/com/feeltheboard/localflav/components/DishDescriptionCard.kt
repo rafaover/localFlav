@@ -19,13 +19,8 @@ fun DishDescriptionCard(
     modifier: Modifier = Modifier
 ) {
     Row(
-        modifier = Modifier
-            .padding(
-                top = dimensionResource(R.dimen.padding_small),
-                bottom = dimensionResource(R.dimen.padding_small),
-                start = dimensionResource(R.dimen.padding_small),
-                end = dimensionResource(R.dimen.padding_end_description),
-            )
+        modifier = modifier
+            .padding(dimensionResource(R.dimen.padding_large))
     ) {
         Text(
             text = stringResource(id = description),
