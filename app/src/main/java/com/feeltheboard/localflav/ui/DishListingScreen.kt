@@ -24,7 +24,7 @@ fun DishListingScreen() {
         content = {
             LazyColumn(
                 contentPadding = it,
-                verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small)),
+                verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_medium)),
                 modifier = Modifier.padding(dimensionResource(R.dimen.padding_medium))
             ) {
                 items(dishes) {
