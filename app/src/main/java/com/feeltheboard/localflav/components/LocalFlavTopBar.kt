@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -19,13 +20,13 @@ import com.feeltheboard.localflav.R
 @Composable
 fun LocalFlavTopAppBar(modifier: Modifier = Modifier) {
     CenterAlignedTopAppBar(
+        modifier = modifier,
         title = {
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Image(
                     modifier = Modifier
-                        //.size() - add size modifier
                         .padding(dimensionResource(id = R.dimen.padding_small)),
                     painter = painterResource(R.drawable.menu_access),
                     contentDescription = stringResource(R.string.app_name)
@@ -36,10 +37,13 @@ fun LocalFlavTopAppBar(modifier: Modifier = Modifier) {
                 )
             }
         },
-        /*
         navigationIcon = {
-            TODO("Insert IconButton with list of Dishes to take to specific dish")
+            IconButton(
+                onClick = { /*TODO*/ },
+                enabled = false,
+            ) {
+
+            }
         }
-         */
     )
 }
