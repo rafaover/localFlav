@@ -1,8 +1,5 @@
 package com.feeltheboard.localflav.components
 
-import androidx.compose.animation.animateContentSize
-import androidx.compose.animation.core.Spring
-import androidx.compose.animation.core.spring
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -27,12 +24,12 @@ fun DishCard(
     Box(modifier = modifier) {
         Card(
             modifier = Modifier
-                .animateContentSize(
-                    animationSpec = spring(
-                        dampingRatio = Spring.DampingRatioLowBouncy,
-                        stiffness = Spring.StiffnessMedium
-                    )
-                )
+//                .animateContentSize(
+//                    animationSpec = spring(
+//                        dampingRatio = Spring.DampingRatioLowBouncy,
+//                        stiffness = Spring.StiffnessMedium
+//                    )
+//                )
                 .fillMaxWidth(),
             shape = CardDefaults.shape,
             border = BorderStroke(
