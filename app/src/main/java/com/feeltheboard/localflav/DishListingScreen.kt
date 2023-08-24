@@ -20,7 +20,7 @@ import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
 fun DishListingScreen() {
     Scaffold(
         topBar = { LocalFlavTopAppBar() },
-        content = {
+        content = { it ->
             LazyColumn(
                 contentPadding = it,
                 verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_medium)),
