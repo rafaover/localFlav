@@ -12,7 +12,7 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.feeltheboard.localflav.R
 import com.feeltheboard.localflav.components.DishCard
-import com.feeltheboard.localflav.components.LocalFlavTopAppBar
+import com.feeltheboard.localflav.topappbar.LocalFlavTopAppBar
 import com.feeltheboard.localflav.data.DataSource.dishes
 import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
 

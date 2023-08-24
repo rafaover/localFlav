@@ -1,4 +1,4 @@
-package com.feeltheboard.localflav.components
+package com.feeltheboard.localflav.topappbar
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Row
