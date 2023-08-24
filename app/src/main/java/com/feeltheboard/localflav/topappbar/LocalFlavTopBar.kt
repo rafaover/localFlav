@@ -1,4 +1,4 @@
-package com.feeltheboard.localflav.components
+package com.feeltheboard.localflav.topappbar
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Row
@@ -7,8 +7,6 @@ import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -29,24 +27,31 @@ fun LocalFlavTopAppBar(modifier: Modifier = Modifier) {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Image(
-                    modifier = Modifier
-                        .padding(dimensionResource(id = R.dimen.padding_small)),
-                    painter = painterResource(R.drawable.food_bank_24),
-                    contentDescription = stringResource(R.string.app_name)
-                )
-                Text(
-                    text = stringResource(R.string.app_name),
-                    style = MaterialTheme.typography.titleMedium
+                    modifier = modifier.
+                        padding(dimensionResource(R.dimen.padding_small)),
+                    painter = painterResource(R.drawable.ic_launcher_foreground),
+                    contentDescription = stringResource(R.string.app_name),
                 )
             }
         },
-        navigationIcon = {
+        actions = {
             IconButton(
-                content = { Icon(painter = painterResource(R.drawable.menu_access), contentDescription = "List of Dishes") },
-                onClick = { /*TODO*/ },
-                enabled = false,
+                content = {
+                    Icon(
+                        painter = painterResource(R.drawable.info_icon),
+                        contentDescription = "Information"
+                    ) },
+                onClick = { TODO("Menu to open dialog with App Information") },
+                enabled = true,
             )
-        }
+        },
+//        navigationIcon = {
+//            IconButton(
+//                content = { Icon(painter = painterResource(R.drawable.menu_access), contentDescription = "List of Dishes") },
+//                onClick = { TODO("A Menu to show other countries dishes") },
+//                enabled = false,
+//            )
+//        }
     )
 }
 

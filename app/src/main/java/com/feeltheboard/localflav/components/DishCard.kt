@@ -7,8 +7,12 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -24,12 +28,6 @@ fun DishCard(
     Box(modifier = modifier) {
         Card(
             modifier = Modifier
-//                .animateContentSize(
-//                    animationSpec = spring(
-//                        dampingRatio = Spring.DampingRatioLowBouncy,
-//                        stiffness = Spring.StiffnessMedium
-//                    )
-//                )
                 .fillMaxWidth(),
             shape = CardDefaults.shape,
             border = BorderStroke(
@@ -37,10 +35,17 @@ fun DishCard(
                 MaterialTheme.colorScheme.primary
             )
         ) {
-            Row {
+            Row(
+                verticalAlignment = Alignment.Bottom
+            ) {
+                val checkedState = remember { mutableStateOf(false) }
                 DishDayTitleCard(
                     day = dish.dayRes,
                     title = dish.titleRes
+                )
+                Checkbox(
+                    checked = checkedState.value,
+                    onCheckedChange = { checkedState.value = it },
                 )
             }
             Row {
