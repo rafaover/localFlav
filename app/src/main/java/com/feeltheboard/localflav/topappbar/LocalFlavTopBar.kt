@@ -34,13 +34,24 @@ fun LocalFlavTopAppBar(modifier: Modifier = Modifier) {
                 )
             }
         },
-        navigationIcon = {
+        actions = {
             IconButton(
-                content = { Icon(painter = painterResource(R.drawable.menu_access), contentDescription = "List of Dishes") },
-                onClick = { /*TODO*/ },
-                enabled = false,
+                content = {
+                    Icon(
+                        painter = painterResource(R.drawable.info_icon),
+                        contentDescription = "Information"
+                    ) },
+                onClick = { TODO("Menu to open dialog with App Information") },
+                enabled = true,
             )
-        }
+        },
+//        navigationIcon = {
+//            IconButton(
+//                content = { Icon(painter = painterResource(R.drawable.menu_access), contentDescription = "List of Dishes") },
+//                onClick = { TODO("A Menu to show other countries dishes") },
+//                enabled = false,
+//            )
+//        }
     )
 }
 
