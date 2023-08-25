@@ -1,4 +1,4 @@
-package com.feeltheboard.localflav.topappbar.components
+package com.feeltheboard.localflav.ui.topappbar.components
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu

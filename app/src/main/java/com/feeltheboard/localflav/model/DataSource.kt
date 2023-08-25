@@ -1,4 +1,4 @@
-package com.feeltheboard.localflav.data
+package com.feeltheboard.localflav.model
 
 import com.feeltheboard.localflav.R
 

@@ -1,4 +1,4 @@
-package com.feeltheboard.localflav.components
+package com.feeltheboard.localflav.ui.components
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Box
@@ -17,7 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.feeltheboard.localflav.R
-import com.feeltheboard.localflav.data.Dish
+import com.feeltheboard.localflav.model.Dish
 import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
 
 @Composable

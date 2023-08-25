@@ -1,4 +1,4 @@
-package com.feeltheboard.localflav
+package com.feeltheboard.localflav.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.padding
@@ -10,9 +10,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
-import com.feeltheboard.localflav.components.DishCard
-import com.feeltheboard.localflav.topappbar.LocalFlavTopAppBar
-import com.feeltheboard.localflav.data.DataSource.dishes
+import com.feeltheboard.localflav.R
+import com.feeltheboard.localflav.ui.components.DishCard
+import com.feeltheboard.localflav.ui.topappbar.LocalFlavTopAppBar
+import com.feeltheboard.localflav.model.DataSource.dishes
 import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
