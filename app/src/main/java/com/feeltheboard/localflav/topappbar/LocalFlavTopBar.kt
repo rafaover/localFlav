@@ -3,6 +3,8 @@ package com.feeltheboard.localflav.topappbar
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -39,7 +41,7 @@ fun LocalFlavTopAppBar(modifier: Modifier = Modifier) {
             IconButton(
                 content = {
                     Icon(
-                        painter = painterResource(R.drawable.info_icon),
+                        imageVector = Icons.Filled.Info,
                         contentDescription = "Information"
                     ) },
                 onClick = { TODO("Menu to open dialog with App Information") },
