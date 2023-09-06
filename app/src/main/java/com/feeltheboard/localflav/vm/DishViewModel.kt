@@ -4,5 +4,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 
 class DishViewModel: ViewModel() {
-    val cardCheckBoxIsChecked = mutableStateOf(false)
+    var cardCheckBoxIsChecked = mutableStateOf(false)
+
+    fun toggleCheckbox() {
+        cardCheckBoxIsChecked.value = !cardCheckBoxIsChecked.value
+    }
 }
