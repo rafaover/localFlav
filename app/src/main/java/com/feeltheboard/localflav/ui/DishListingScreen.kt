@@ -12,13 +12,16 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.feeltheboard.localflav.R
 import com.feeltheboard.localflav.data.DataSource.dishes
-import com.feeltheboard.localflav.ui.components.DishCard
-import com.feeltheboard.localflav.ui.topappbar.LocalFlavTopAppBar
+import com.feeltheboard.localflav.ui.components.card.DishCard
 import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
+import com.feeltheboard.localflav.ui.topappbar.LocalFlavTopAppBar
+import com.feeltheboard.localflav.vm.DishViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DishListingScreen() {
+fun DishListingScreen(
+    viewModel: DishViewModel = DishViewModel()
+) {
     Scaffold(
         topBar = { LocalFlavTopAppBar() },
         content = { it ->
@@ -29,7 +32,8 @@ fun DishListingScreen() {
             ) {
                 items(dishes) {
                     DishCard(
-                        dish = it
+                        dish = it,
+                        viewModel = viewModel
                     )
                 }
             }
