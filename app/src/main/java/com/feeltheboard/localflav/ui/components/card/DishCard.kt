@@ -10,19 +10,25 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
-import androidx.compose.ui.tooling.preview.Preview
 import com.feeltheboard.localflav.R
 import com.feeltheboard.localflav.data.Dish
-import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
+import com.feeltheboard.localflav.vm.DishViewModel
 
 @Composable
 fun DishCard(
     dish: Dish,
+    viewModel: DishViewModel,
     modifier: Modifier = Modifier
 ) {
+    var cardCheckBoxIsChecked by rememberSaveable { mutableStateOf(viewModel.cardCheckBoxIsChecked.value) }
+
     Box(modifier = modifier) {
         Card(
             modifier = Modifier
@@ -41,8 +47,8 @@ fun DishCard(
                     title = dish.titleRes
                 )
                 Checkbox(
-                    checked = TODO(),
-                    onCheckedChange = { TODO() },
+                    checked = cardCheckBoxIsChecked,
+                    onCheckedChange = { cardCheckBoxIsChecked = it }
                 )
             }
             Row {
@@ -62,6 +68,7 @@ fun DishCard(
     }
 }
 
+/*
 @Preview
 @Composable
 fun DishCardPreview() {
@@ -76,3 +83,4 @@ fun DishCardPreview() {
         )
     }
 }
+*/
