@@ -1,4 +1,4 @@
-package com.feeltheboard.localflav.ui.components
+package com.feeltheboard.localflav.ui.components.card
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Box

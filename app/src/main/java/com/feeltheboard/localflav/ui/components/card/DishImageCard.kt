@@ -1,4 +1,4 @@
-package com.feeltheboard.localflav.ui.components
+package com.feeltheboard.localflav.ui.components.card
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
