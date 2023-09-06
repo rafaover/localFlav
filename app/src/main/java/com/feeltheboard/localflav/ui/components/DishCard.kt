@@ -10,14 +10,12 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.feeltheboard.localflav.R
-import com.feeltheboard.localflav.model.Dish
+import com.feeltheboard.localflav.data.Dish
 import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
 
 @Composable
@@ -38,14 +36,13 @@ fun DishCard(
             Row(
                 verticalAlignment = Alignment.Bottom
             ) {
-                val checkedState = remember { mutableStateOf(false) }
                 DishDayTitleCard(
                     day = dish.dayRes,
                     title = dish.titleRes
                 )
                 Checkbox(
-                    checked = checkedState.value,
-                    onCheckedChange = { checkedState.value = it },
+                    checked = TODO(),
+                    onCheckedChange = { TODO() },
                 )
             }
             Row {
