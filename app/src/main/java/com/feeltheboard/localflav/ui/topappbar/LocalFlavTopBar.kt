@@ -1,8 +1,10 @@
-package com.feeltheboard.localflav.topappbar
+package com.feeltheboard.localflav.ui.topappbar
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -15,6 +17,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.feeltheboard.localflav.R
+import com.feeltheboard.localflav.ui.topappbar.components.TopBarNavigationIcon
 import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -38,20 +41,19 @@ fun LocalFlavTopAppBar(modifier: Modifier = Modifier) {
             IconButton(
                 content = {
                     Icon(
-                        painter = painterResource(R.drawable.info_icon),
+                        imageVector = Icons.Filled.Info,
                         contentDescription = "Information"
                     ) },
                 onClick = { TODO("Menu to open dialog with App Information") },
                 enabled = true,
             )
         },
-//        navigationIcon = {
-//            IconButton(
-//                content = { Icon(painter = painterResource(R.drawable.menu_access), contentDescription = "List of Dishes") },
-//                onClick = { TODO("A Menu to show other countries dishes") },
-//                enabled = false,
-//            )
-//        }
+        /* Feature tag to activate the navigation icon */
+        navigationIcon = {
+            val navigationIcon = false
+            if (navigationIcon) TopBarNavigationIcon()
+        }
+        /* end of Feature tag */
     )
 }
 
