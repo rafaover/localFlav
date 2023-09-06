@@ -7,6 +7,5 @@ data class Dish(
     @StringRes val dayRes: Int,
     @StringRes val titleRes: Int,
     @DrawableRes val imageRes: Int,
-    @StringRes val descriptionRes: Int,
-    val dishCheckBox: Boolean = false
+    @StringRes val descriptionRes: Int
 )
