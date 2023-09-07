@@ -15,5 +15,6 @@ fun TopBarNavigationIcon() {
                 contentDescription = "List of Countries"
             ) },
         onClick = { TODO("A Menu to show other countries dishes") },
+        enabled = true
     )
 }

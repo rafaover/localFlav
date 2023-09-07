@@ -28,8 +28,8 @@ fun LocalFlavTopAppBar(modifier: Modifier = Modifier) {
 
         /* Feature tag to activate the navigation icon */
         navigationIcon = {
-            val navigationIcon = true
-            if (navigationIcon) TopBarNavigationIcon()
+            val activateNavigationIcon = true
+            if (activateNavigationIcon) TopBarNavigationIcon()
         },
         /* end of Feature tag */
 
