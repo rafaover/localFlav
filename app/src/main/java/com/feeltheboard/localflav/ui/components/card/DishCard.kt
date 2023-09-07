@@ -27,7 +27,9 @@ fun DishCard(
     viewModel: DishViewModel,
     modifier: Modifier = Modifier
 ) {
-    var cardCheckBoxIsChecked by rememberSaveable { mutableStateOf(viewModel.cardCheckBoxIsChecked.value) }
+    var cardCheckBoxIsChecked by rememberSaveable {
+        mutableStateOf(viewModel.cardCheckBoxIsChecked.value)
+    }
 
     Box(modifier = modifier) {
         Card(

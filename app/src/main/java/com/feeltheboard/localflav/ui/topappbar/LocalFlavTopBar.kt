@@ -25,13 +25,21 @@ import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
 fun LocalFlavTopAppBar(modifier: Modifier = Modifier) {
     CenterAlignedTopAppBar(
         modifier = modifier,
+
+        /* Feature tag to activate the navigation icon */
+        navigationIcon = {
+            val navigationIcon = true
+            if (navigationIcon) TopBarNavigationIcon()
+        },
+        /* end of Feature tag */
+
         title = {
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Image(
                     modifier = modifier.
-                        padding(dimensionResource(R.dimen.padding_small)),
+                    padding(dimensionResource(R.dimen.padding_small)),
                     painter = painterResource(R.drawable.ic_launcher_foreground),
                     contentDescription = stringResource(R.string.app_name),
                 )
@@ -48,12 +56,6 @@ fun LocalFlavTopAppBar(modifier: Modifier = Modifier) {
                 enabled = true,
             )
         },
-        /* Feature tag to activate the navigation icon */
-        navigationIcon = {
-            val navigationIcon = false
-            if (navigationIcon) TopBarNavigationIcon()
-        }
-        /* end of Feature tag */
     )
 }
 
