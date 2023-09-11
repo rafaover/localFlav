@@ -1,4 +1,4 @@
-package com.feeltheboard.localflav.ui.topappbar
+package com.feeltheboard.localflav.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Row
@@ -18,7 +18,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.feeltheboard.localflav.R
 import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
-import com.feeltheboard.localflav.ui.topappbar.components.TopBarNavigationIcon
+import com.feeltheboard.localflav.ui.components.TopBarNavigationIcon
 import com.feeltheboard.localflav.vm.DishViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
