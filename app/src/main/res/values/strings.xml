@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name" translatable="false">LocalFlav</string>
+    <string name="about_text">If you have any suggestions of countries or list of dishes, please, send an email with subject \"Suggestion\" to the email below. </string>
+    <string name="email">rafamsilva@gmail.com</string>
+    <string name="close">Close</string>
+
     // List of 30 days
     <string name="day_1">Day 1</string>
     <string name="day_2">Day 2</string>

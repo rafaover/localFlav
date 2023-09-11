@@ -1,4 +1,4 @@
-package com.feeltheboard.localflav.ui.topappbar.components
+package com.feeltheboard.localflav.ui.components
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
@@ -15,5 +15,6 @@ fun TopBarNavigationIcon() {
                 contentDescription = "List of Countries"
             ) },
         onClick = { TODO("A Menu to show other countries dishes") },
+        enabled = true
     )
 }
