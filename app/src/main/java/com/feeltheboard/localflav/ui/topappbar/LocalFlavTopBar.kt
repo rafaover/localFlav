@@ -29,7 +29,7 @@ import com.feeltheboard.localflav.vm.DishViewModel
 @Composable
 fun LocalFlavTopAppBar(
     modifier: Modifier = Modifier,
-    showDialog: () -> Unit
+    viewModel: DishViewModel,
 ) {
     CenterAlignedTopAppBar(
         modifier = modifier,
@@ -55,7 +55,7 @@ fun LocalFlavTopAppBar(
         },
         actions = {
                   IconButton(
-                      onClick = { showDialog() }
+                      onClick = { viewModel.changeShowDialogValue() }
                   ) {
                       Icon(
                           imageVector = Icons.Filled.Info,
@@ -71,6 +71,6 @@ fun LocalFlavTopAppBar(
 fun LocalFlavTopBarPreview() {
     var showDialog by remember { mutableStateOf(false) }
     LocalFlavTheme {
-        LocalFlavTopAppBar(showDialog = { showDialog = true })
+        LocalFlavTopAppBar(viewModel = DishViewModel())
     }
 }

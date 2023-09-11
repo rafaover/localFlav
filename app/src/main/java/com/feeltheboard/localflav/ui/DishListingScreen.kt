@@ -5,7 +5,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -33,11 +32,11 @@ import com.feeltheboard.localflav.vm.DishViewModel
 fun DishListingScreen(
     viewModel: DishViewModel = DishViewModel()
 ) {
-    var showDialog by remember { mutableStateOf(false) }
+    var showDialog by viewModel.showDialog
 
     Scaffold(
         topBar = {
-            LocalFlavTopAppBar(showDialog = { showDialog = true })
+            LocalFlavTopAppBar(viewModel = viewModel)
         },
         content = { it ->
             LazyColumn(
