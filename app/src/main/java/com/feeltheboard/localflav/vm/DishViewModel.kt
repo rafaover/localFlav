@@ -9,7 +9,7 @@ class DishViewModel: ViewModel() {
     private var _showDialog = mutableStateOf(false)
     val showDialog = _showDialog
 
-    /** Changes value of infoDialog component Boolean */
+    /** Changes value of MainAlertDialog component Boolean */
     fun changeShowDialogValue() {
         _showDialog.value = !_showDialog.value
     }
