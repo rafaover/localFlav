@@ -9,13 +9,13 @@ class DishViewModel: ViewModel() {
     private var _showDialog = mutableStateOf(false)
     val showDialog = _showDialog
 
-    /** Changes value of info Dialog on TopBar */
+    /** Changes value of infoDialog component Boolean */
     fun changeShowDialogValue() {
         _showDialog.value = !_showDialog.value
     }
 
 
-    /** Changes value for CheckBox on card - Used in Unit Testing */
+    /** Unit Testing - Changes boolean for CheckBox on card */
     fun toggleCheckbox() {
         cardCheckBoxIsChecked.value = !cardCheckBoxIsChecked.value
     }

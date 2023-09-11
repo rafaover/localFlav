@@ -20,9 +20,9 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.feeltheboard.localflav.R
 import com.feeltheboard.localflav.data.DataSource.dishes
+import com.feeltheboard.localflav.ui.components.MainAlertDialog
 import com.feeltheboard.localflav.ui.components.card.DishCard
 import com.feeltheboard.localflav.ui.theme.LocalFlavTheme
-import com.feeltheboard.localflav.ui.topappbar.LocalFlavTopAppBar
 import com.feeltheboard.localflav.vm.DishViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -49,33 +49,7 @@ fun DishListingScreen(
                     )
                 }
             }
-
-            if (showDialog) {
-                AlertDialog(
-                    onDismissRequest = {
-                        showDialog = false
-                    },
-                    icon = { Icon(Icons.Filled.Info, contentDescription = "localFlav") },
-                    title = {
-                        Text(text = "Title")
-                    },
-                    text = {
-                        Text(
-                            "This area typically contains the supportive text " +
-                                    "which presents the details regarding the Dialog's purpose."
-                        )
-                    },
-                    confirmButton = {
-                        TextButton(
-                            onClick = {
-                                showDialog = false
-                            }
-                        ) {
-                            Text("Thanks")
-                        }
-                    },
-                )
-            }
+            MainAlertDialog(viewModel = viewModel)
         }
     )
 }
